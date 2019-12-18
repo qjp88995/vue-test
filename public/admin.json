@@ -1,0 +1,12 @@
+[
+    "article.list",
+    "article.detail",
+    "article.add",
+    "article.edit",
+    "article.remove",
+    "member.list",
+    "member.detail",
+    "member.add",
+    "member.edit",
+    "member.remove"
+]
