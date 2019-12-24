@@ -2,6 +2,7 @@ import Login from '../components/Login'
 import Article from '../components/Article'
 import Member from '../components/Member'
 import Forbidden from '../components/403'
+import Nav from '../components/Nav'
 
 export default [
     {
@@ -33,7 +34,10 @@ export default [
     {
         name: 'article',
         path: '/article',
-        component: Article,
+        components: {
+            default: Article,
+            nav: Nav
+        },
         meta: {
             title: '文章管理',
             requiresAuth: true,
@@ -43,7 +47,10 @@ export default [
     {
         name: 'member',
         path: '/Member',
-        component: Member,
+        components: {
+            default: Member,
+            nav: Nav
+        },
         meta: {
             title: '会员管理',
             requiresAuth: true,
